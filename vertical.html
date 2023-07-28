@@ -12,7 +12,31 @@
     <div class="d-flex p-2 top-bar align-items-center bg-light">
             <i class="fab fa-instagram fs-5 text"></i>
             <span class="fs-5 text" style="margin: 0 5px;"><b>Instagram</b></span>
-            <button type="button" class="btn btn-success" style="margin-left: auto;">Create a new post</button>
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" style="margin-left: auto;">Create a new post</button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Create a new post</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div><b>Caption</b></div>
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"></textarea>
+                        </div>
+                        <div class="body-actions">
+                            <button type="button" class="btn btn-outline-secondary"><i class="fas fa-camera"></i></button>
+                            <button type="button" class="btn btn-outline-secondary"><i class="fas fa-map-marker-alt"></i></button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="margin: 0 5px;">
                     <i class="fas fa-cog"></i>
@@ -39,30 +63,39 @@
             <div class="row row-cols-1">
                  <div class="col">
                     <div class="card">
-                        <h5 class="card-title">Card title</h5>
+                      <div class="title">
+                        <span class="card-title">The First forest</span>
+                        <span class="align">08/26</span>
+                      </div>
                       <img src="https://images.pexels.com/photos/23547/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-likes"><b>204 likes</b></h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card">
-                        <h5 class="card-title">Card title</h5>
+                      <div class="title">
+                        <span class="card-title">The Second forest</span>
+                        <span class="align">04/09</span>
+                      </div>
                       <img src="https://images.pexels.com/photos/23547/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-likes"><b>26985 likes</b></h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       </div>
                     </div>
                   </div>
                   <div class="col">
                     <div class="card">
-                        <h5 class="card-title">Card title</h5>
+                      <div class="title">
+                        <span class="card-title">The Third forest</span>
+                        <span class="align">06/10</span>
+                      </div>
                       <img src="https://images.pexels.com/photos/23547/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
                       <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-likes"><b>204 likes</b></h5>
                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                       </div>
                     </div>
